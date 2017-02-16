@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JavaScript:LAB04</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SAKAN</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/lab04.html">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="http://angsila.cs.buu.ac.th/~58160641/887371/lab01/aboutme.html">AboutMe</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sakunj17">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">JavaScript
+                    <small>Basic JavaScript</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js01.PNG" alt="01">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>First Example of JavaScript</h3>
+                <p><pre><h4>คำอธิบาย js01.html</h4> 
+     9 : พิมพ์ข้อความ Last updated on ต่อด้วย
+          วันที่และเวลาอัพเดทไฟล์ล่าสุด
+                </pre></p1>
+               <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js01.html">ผลรัน</a>
+               <br>
+               <br>
+                <center><SCRIPT LANGUAGE="JavaScript">
+            <!-- hide from old browsers by embedding in a comment
+            document.write("Last update on" + document.lastModified )
+            //end script hiding --> 
+              </SCRIPT></center>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js02.PNG" alt="02">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Another Example of JavaScript</h3>
+                <p><pre><h4>คำอธิบาย js02.html</h4>
+     8 : พิมพ์ข้อความ Factorial Table ในแท็ก h1 
+     9 : ให้ตัวแปร i = 1, fact = 1 ให้วนลูป 9 รอบ 
+         กำหนดให้ค่า i เพิ่มรอบละ 1, 
+         กำหนดให้ตัวแปร fact = fact*i 
+    10 : พิมพ์ค่าตัวแปร i ต่อด้วยข้อความ ! = และต่อด้วยค่าตัวแปร fact 
+    11 : พิมพ์คำสั่งขึ้นบรรทัดใหม่
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js02.html">ผลรัน</a>
+               <br>
+               <br>
+               <h3><SCRIPT LANGUAGE="JavaScript">
+                  document.write("<H4>Factorial Table<H4>");
+                for (i=1,fact=1;  i<10; i++, fact = fact*i){
+                   document.write(i+ "! = "+fact);
+                    document.write("<BR>");
+                  }
+                </SCRIPT></h3>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Three -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js03.PNG" alt="03">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Handling Events Example</h3>
+                <pre><h4>คำอธิบาย js03.html</h4>
+  8,9 : เป็นการสร้างปุ่ม ชื่อ Click me และเมื่อกดปุ่ม Click me 
+        จะเรียกฟังก์ชั่น alert ทำให้แสดงกล่องตอบโต้ 
+        มีข้อความแสดงว่า "You click me"</p></pre>
+               <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js03.html">ผลรัน</a>
+               <br>
+               <br>
+               <center><FROM>
+                <input TYPE="button" VALUE="Click me" onClick="alert('You clicked me')">
+               </FROM></center>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+             <!-- Project four -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js04.PNG" alt="04">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Example using new</h3>
+                <p><pre><h4>คำอธิบาย js04.html</h4>
+     5 : ประกาศฟังก์ชั่นชื่อ outputDate()
+     6 : ตัวแปร d เก็บค่าวันที่และเวลา
+     7 : พิมพ์ข้อความ d.toLocaleString() คือการเรียกวันที่และเวลา ปัจจุบันของเครื่องคอมพิวเตอร์
+ 13,14 : เรียกใช้ฟังก์ชั่น outputData() จะพิมพ์วันที่และเวลาปัจจุบันของเครื่องคอมพิวเตอร์
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js04.html">ผลรัน</a>
+               <br>
+               <br>
+             <SCRIPT LANGUAGE=JavaScript>
+                function outputDate(){
+                      var d = new Date();
+                  document.write(d.toLocaleString());
+                 }
+            </SCRIPT>
+            <H3>The date and time are</H3>
+                <SCRIPT LANGUAGE=JavaScript>
+                 outputDate();
+                </SCRIPT>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+          <!-- Project five -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js05.PNG" alt="05">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Example of alert, confirm, prompt</h3>
+                <p><pre><h4>คำอธิบาย js05.html</h4>
+ 5 : ประกาศฟังก์ชั่นชื่อ alertUser()
+ 6 : ฟังก์ชั่น alert เก็บข้อความ"An alert box contains an exclamation mark"
+ 8 : ประกาศฟังก์ชั่นชื่อ confirmUser()
+ 9 : ตัวแปร msg เก็บข้อความ"Please confirm that you want" และ "to test another button?"
+10 : ตวรจสอบการกดปุ่มต่อตัวแปร msg
+11 : ถ้ากดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "You selected OK"
+13 : ถ้ากดปุ่ม Cancel จะขึ้นหน้าใหม่แสดงข้อความ "You selected Cancel"
+15 : ประกาศฟังก์ชั่นชื่อ promptUser()
+16 : ตัวแปร namel เก็บฟังก์ชั่น prompt เก็บข้อความ "What is your name?" และ " " ---> (ค่า String ว่าง)
+17 : พิมพ์ข้อความ "welcome to this page" ใน h2 และต่อด้วยตัวแปร namel
+24 : เป็นการสร้างปุ่ม ชื่อ Click here to test alert() และเมื่อกดปุ่ม Click here to test alert()
+ จะเรียกฟังก์ชั่น alertUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "An alert box contains an exclamation mark"
+25 : เป็นการสร้างปุ่ม ชื่อ Click here to test confirm() และเมื่อกดปุ่ม Click here to test confirm() จะเรียกฟังก์ชั่น confirmUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "please confirm that you want" และ "to test another button?" 
+ถ้ากดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "You selected OK"
+ถ้ากดปุ่ม Cancel จะขึ้นหน้าใหม่แสดงข้อความ "You selected Cancel"
+26 : เป็นการสร้างปุ่ม ชื่อ Click here to test prompt() และเมื่อกดปุ่ม Click here to test prompt() จะเรียกฟังก์ชั่น promptUser() จะแสดงกล่องตอบโต้ มีข้อความแสดงว่า "What is your name?" และให้ใส่ชื่อลงไปช่องว่าง ถ้ากดปุ่ม Ok จะขึ้นหน้าใหม่แสดงข้อความ "welcome to this page" ตามด้วยชื่อที่ใส่
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js05.html">ผลรัน</a>
+               <br>
+               <br>
+            <SCRIPT LANGUAGE=JavaScript>
+function alertUser(){
+  alert("An alert box contains an exclamation mark");
+}
+function confirmUser(){
+  var msg = "\n please confirm that you want\n" + "to test another button?";
+  if (confirm(msg))
+    document.write("<h2>You selected OK</h2>");
+  else
+    document.write("<h2>You selected Cancel</h2>");
+}
+function promptUser(){
+  name1=prompt("What is your name?", " ");
+  document.write("<h2>welcome to this page "+name1+"</h2>");
+}
+</SCRIPT>
+<b>Welcome to this page : <b><br>
+<center><FROM>
+<input type=button value="Click hear to test alert ()" onClick="alertUser()"><br>
+<input type=button value="Click hear to test confirm ()" onClick ="confirmUser()"><br>
+<input type=button value="Click hear to test prompt () " onClick ="promptUser()">
+</FROM></center>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+<!-- Project six -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js06.PNG" alt="02">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Check Browser</h3>
+                <p><pre><h4>คำอธิบาย js06.html</h4>
+ 7 : ขึ้นบรรทัด และพิมพ์ข้อความ "This browser is" และ "Netscape" (ชื่อ Browser)
+ 8 : ขึ้นบรรทัด และพิมพ์ข้อความ "Version" และเรียกคำสั่ง navigator.appVersion (version ของ netscape)
+ 9 : parseFloat (การแปลงค่า string หรือตัวแปรให้เป็น Number) ตรวจสอบว่า navigator.appVersion มีค่ามากกว่าหรือเท่ากับ 4 หรือไม่
+10 : ถ้าเป็นจริง จะขึ้นบรรทัดใหม่ และพิมพ์ข้อความ "You have an up-to-date browser"
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js06.html">ผลรัน</a>
+               <br>
+               <br>
+               <SCRIPT LANGUAGE=JavaScript>
+document.write("<BR>This browser is " + navigator.appName);
+document.write("<br> Version "+navigator.appVersion);
+if(parseFloat(navigator.appVersion)>= 4){
+  document.write("<BR> You have an up-to-date browser");
+}
+</SCRIPT>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+<!-- Project seven -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/07.PNG" alt="07">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>re-direct based upon window size</h3>
+                <p><pre><h4>คำอธิบาย js07.html</h4>
+ 6: ประกาศฟังก์ชั่น windowHeight
+ 7: ตรวจสอบว่าใช้กับ Browser IE หรือไม่
+ 8: ถ้าเข้าเงื่อนไข จะคืนค่าความสูงหน้าจอกลับมา
+ 9: ตรวจสอบว่าใช้กับ Browser Netscape หรือไม่
+10: ถ้าเข้าเงื่อนไข จะคืนค่าความสูงหน้าจอกลับมา
+11: ถ้าไม่ตรงเงื่อนไข
+12: ให้คืนค่า 0 กลับมา
+15: ตรวจสอบว่าความสูงหน้าจอมากกว่าหรือเท่ากับ 300 หรือไม่
+16: ถ้าเข้าเงื่อนไข จะลิ้งค์ไปยังหน้า https://www.youtube.com/watch?v=gmNYdk83CIA
+17: ถ้าไม่เข้าเงื่อนไข
+18: ให้ลิ้งค์ไปหน้า lab04
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js07.html">ผลรัน</a>
+               <br>
+               <br>
+               <center><img src = "img/pop.PNG" width="350" height="200" ></center>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+<!-- Project Eight -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js08.PNG" alt="08">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Image rollovert</h3>
+                <p><pre><h4>คำอธิบาย js08.html</h4>
+ 4 : ประกาศฟังก์ชั่นชื่อ highlightdocs()
+ 5 : ตรวจสอบ document ชนิด images (รูปภาพ)
+ 5 : ถ้าจริง ให้ document.images["docs"].src = docsOn.src
+ 7 : ประกาศฟังก์ชั่นชื่อ unhighlightdocs()
+ 8 : ตรวจสอบ document ชนิด images (รูปภาพ)
+ 8 : ถ้าจริง ให้ document.images["docs"].src = docsOff.src
+10 : ตรวจสอบ document ชนิด images (รูปภาพ)
+11 : ถ้าจริง ให้ตัวแปร docsOn เก็บค่า Images (รูปภาพ)
+12 : ตัวแปร docsOn.src เก็บไฟล์รูปภาพ ชื่อ img/p1.jpg
+13 : ถ้าจริง ให้ตัวแปร docsOff เก็บค่า Images (รูปภาพ)
+14 : ตัวแปร docsOff.src เก็บไฟล์รูปภาพ ชื่อ omg/p2.jpg
+19 : ใส่ลิงค์ www.google.com 
+20 : เมื่อเอาเคอร์เซอร์ไปบริเวณรูปภาำจะเรียกฟังก์ชั่น highlightdocs() และเมื่อกดรูปภาำจะเรียกฟังก์ชั่น unhighlightdocs()
+21 : ใส่รูปภาพไฟล์ชื่อ img/p2.jpg ตั้งชื่อว่า docs ให้มีความสูง (Height) 200, กว้าง (Width) 300 และไม่มีเส้นขอบ
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js08.html">ผลรัน</a>
+               <br>
+               <br>
+               <SCRIPT LANGUAGE=JavaScript>
+function highlightdocs(){
+  if (document.images) { document.images["docs"].src = docsOn.src; }
+} 
+function unhighlightdocs(){
+  if (document.images) { document.images["docs"].src= docsOff.src; }
+}
+if(document.images){
+  docsOn = new Image();
+  docsOn.src = "img/p1.jpg";
+  docsOff = new Image();
+  docsOff.src = "img/p2.jpg";
+}
+</SCRIPT>
+<P><A HREF="http://www.google.com"
+  onMouseOver = "highlightdocs()" onMouseOut="unhighlightdocs()">
+  <center><IMG SRC="img/p2.jpg" name=docs height=200 width=300 border=0></center>
+  </A>
+</P>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+         <!-- Project nine -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js09.PNG" alt="09">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Pull-down Menu with URL Revealed</h3>
+                <p><pre><h4>คำอธิบาย js09.html</h4>
+ 4 : ประกาศฟังก์ชั่นชื่อ doMoveBrowser() รับค่า form
+ 5 : ให้ parent เก็บค่าที่ตั้งของลิงค์ แล้วเก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()
+ 7 : ประกาศฟังก์ชั่นชื่อ getSelectedValue()
+ 8 : รีเทิร์นค่า document ชื่อ form1 ประเภท list (รายการ) ที่คำสั่ง selectedIndex กลับ 
+10 : ประกาศฟังก์ชั่นชื่อ showURL() รับค่า form
+11 : สร้าง form ประเภท TextBox (กล่องข้อความ) ให้เก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()
+18 : สร้าง form ชื่อ form1
+19 : ประเภท list (รายการ) เรียกใช้ฟังก์ชั่นชื่อ showURL(this.form) 
+20 : รายการที่ 1 แสดงข้อความ "Where do you want to go today?"
+21 : รายการที่ 2 เก็บค่า http://www.google.com และแสดงข้อความ "Google"
+22 : รายการที่ 3 เก็บค่า http://www.buu.ac.th และแสดงข้อความ "Buu University"
+23 : รายการที่ 4 เก็บค่า http://www.informatics.buu.ac.th และแสดงข้อความ "Faculty of Informatics"
+25 : สร้างปุ่มกด ประเภท button เก็บค่า Go ถ้ากดปุ่มจะเรียกฟังก์ชั่นชื่อ doMoveBrowser(this.form)
+26 : สร้างปุ่มกด ประเภท reset เก็บค่า Reset
+27 : สร้างกล่องข้อความ ประเภท text ชื่อ TextBox และมีขนาด 40px
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js09.html">ผลรัน</a>
+               <br>
+               <br>
+<SCRIPT LANGUAGE=JavaScript>
+      function doMoveBrowser(form){
+        parent.location.href=form.list.options[getSelectedValue()].value;
+}
+      function getSelectedValue(){
+        return document.form1.list.selectedIndex
+}
+      function showURL(form){
+        form.TextBox.value = form.list.options[getSelectedValue()].value;
+}
+</SCRIPT>
+    <h3>Pull-down Menu with URL Revealed</h3>
+<center>
+    <form name=form1>
+      <select name=list onChange=showURL(this.form)>
+        <option selected value=0> Where do you want to go today?
+        <option value="http://www.google.com">Google
+        <option value="http://www.buu.ac.th">Buu University
+        <option value="http://www.informatics.buu.ac.th">Faculty of Informatics
+      </select>
+      <input type=button value=Go onClick=doMoveBrowser(this.form)>
+      <input type=reset value=reset>
+      <input type=text name=TextBox size=40>
+</form>
+</center>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+<!-- Project Ten -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/js10.PNG" alt="02">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Change inline text Example</h3>
+                <p><pre><h4>คำอธิบาย js10.html</h4>
+ 6 : ตัวแปร AR เก็บต่า Array
+ 7 : ตัวแปร AR ตำแหน่งที่ 0 เก็บข้อความ "Message 1"
+ 8 : ตัวแปร AR ตำแหน่งที่ 1 เก็บข้อความ "Message 2"
+ 9 : ตัวแปร AR ตำแหน่งที่ 2 เก็บข้อความ "Message 3"
+10 : ตัวแปร i มีค่าเท่ากับ 0
+11 : ประกาศฟังก์ชั่น next()
+12 : ตัวแปร i เพิ่มชึ้นรอบละ 1 และหารเอาเศษกับความยาวของตัวแปร AR
+13 : ทำตามคำสั่ง document getElementById("here").innerHTML = AR[i]
+21 : เมื่อคลิกที่ข้อความ"DEFAULT" จะเรียกใช้ฟังก์ชั่น next() และจะเปลี่ยนข้อความตั้งแต่ Message 1 -3 
+
+
+                </pre></p1>
+                <a class="btn btn-primary" href="http://angsila.cs.buu.ac.th/~58160641/887371/lab04/js10.html">ผลรัน</a>
+               <br>
+               <br>
+              <SCRIPT>
+            var AR=new Array();
+              AR[0]="Message 1";
+              AR[1]="Message 2";
+              AR[2]="Message 3";
+                var i=0;
+                      function next(){
+                 i=(++i)%AR.length;
+                   document.getElementById("here").innerHTML=AR[i];
+                      }
+              </SCRIPT>
+              </HEAD>
+              <BODY>
+Click on the middle section to have it change what it says. <BR>
+Text-1
+          <HR>
+        <div onclick="next()" id="here">
+      DEFAULT
+          </div>
+          <HR>
+      Text-2
+</body>
+
+           </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>SAKAN WANNAMORN 58160641 &copy; | Web programming | Burapha University 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

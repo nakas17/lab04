@@ -1,0 +1,23 @@
+<HTML>
+<HEAD><TITLE>re-direct based upon window size</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE=JavaScript>
+function windowHeight(){
+	if (document.body && document.body.clientHeight){//test for IE
+		return document.body.clientHeight;
+	}else if(window.innerHeight){//test for NS
+		return window.innerHeight;
+	}else{
+		return 0;
+	}//both tests have failed
+}
+if(windowHeight()>=300){
+	document.location = "https://www.youtube.com/watch?v=gmNYdk83CIA";
+}else {
+	document.location = "lab04.html";
+}
+	
+</SCRIPT>
+</BODY>
+</HTML>
